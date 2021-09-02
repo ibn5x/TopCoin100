@@ -44,18 +44,13 @@ fetch("https://api.nomics.com/v1/currencies/ticker?key=badc8cea9218d36fd1a3cc246
 fetch("https://api.nomics.com/v1/market-cap/history?key=badc8cea9218d36fd1a3cc2461ce52e13ade6686&ids&start=2021-09-01T00%3A00%3A00Z")
 .then(response => response.json())
 .then(data => {
-    for(let i = 30; i < data.length - 1; i++){
-        const Data = data[i];
-        
-       
+       let Eata = data.length - (data.length - 1);
+    
         totalCap.append(
          `
-           $ ${parseFloat(Data.market_cap).toFixed(2)}
+           $ ${parseFloat(data[Eata].market_cap).toFixed(2)}
          `)
-
-        
-
-     }      
+       
 });
 
 
