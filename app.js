@@ -18,7 +18,7 @@ fetch('https://api.coinpaprika.com/v1/coins')
     }
 });
 
-fetch("https://api.nomics.com/v1/currencies/ticker?key=badc8cea9218d36fd1a3cc2461ce52e13ade6686&ids&ids=BTC,ETH,XRP&interval=1d,30d&convert=EUR&per-page=100&page=1")
+fetch(process.env.PUBLIC_URL +  "https://api.nomics.com/v1/currencies/ticker?key=badc8cea9218d36fd1a3cc2461ce52e13ade6686&ids&ids=BTC,ETH,XRP&interval=1d,30d&convert=EUR&per-page=100&page=1")
 .then(response => response.json())
 .then(data => {
     for(let i = 0; i < 100; i++ ) {
@@ -41,7 +41,7 @@ fetch("https://api.nomics.com/v1/currencies/ticker?key=badc8cea9218d36fd1a3cc246
 
 
 
-fetch("https://api.nomics.com/v1/market-cap/history?key=badc8cea9218d36fd1a3cc2461ce52e13ade6686&ids&start=2021-09-01T00%3A00%3A00Z")
+fetch(process.env.PUBLIC_URL + "https://api.nomics.com/v1/market-cap/history?key=badc8cea9218d36fd1a3cc2461ce52e13ade6686&ids&start=2021-09-01T00%3A00%3A00Z")
 .then(response => response.json())
 .then(data => {
        let Eata = data.length - (data.length - 1);
