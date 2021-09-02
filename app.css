@@ -1,0 +1,40 @@
+table{
+    margin: auto;
+    
+}
+
+td{
+    text-align: center;
+    vertical-align: middle;
+}
+
+th{
+    text-align: center;
+    vertical-align: middle;
+}
+
+
+
+.promo{
+    text-align: center;
+    padding-top: 150px;
+    height: 75vh;
+    background: rgb(128,188,222);
+    background: linear-gradient(180deg, rgba(128,188,222,1) 0%, rgba(255,255,255,1) 100%);
+    color: #fff;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+  
+  }
+
+  .theTeam{
+      display: flex;
+      justify-content: center;
+      flex-flow: wrap;
+  }
+
+ 
